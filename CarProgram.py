@@ -13,4 +13,12 @@ def main():
 
         i += 1
 
+    x = 0
+    while x <= 4:
+        my_car.calc_brake()
+        print("Braking...")
+        print(f"Current Speed: {my_car.get_speed()}")
+
+        x += 1
+
 main()
