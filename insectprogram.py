@@ -1,4 +1,4 @@
-import Insects as i
+import InsectClass as i
 #import the name of the FILE, not the class
 
 mosquito = i.insect(2,4, 'Mosquito') #w, l, n are now set to these items
