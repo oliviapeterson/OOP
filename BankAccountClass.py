@@ -20,7 +20,7 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
-        if amount > self.__balance:
+        if abs(amount) > self.__balance:
             print("Cannot withdraw more than the account balance.")
         else:
             self.__balance -= abs(amount)
@@ -36,5 +36,5 @@ class BankAccount:
 
 
 
-    #def __str__(self):
-     #   return 'The balance is $' + format(self.__balance, ',.2f')
+    def __str__(self):
+        return 'The balance is $' + format(self.__balance, ',.2f')
